@@ -1,39 +1,46 @@
 public class Food extends Item
 {  
-  //
-  private int ;
+  //nutritional value
+  private int nutrition;
   //Color of Flower
-  private String colour;
+  private int quantity;
    /**
-   * Method to get the edibility
-   * @return the edibility
+   * Method to get the nutritional value
+   * @return the nutrition
    */
-  public String getEdible()
+  public int getNutrition()
   {
-    return isEdible;
+    return nutrition;
   }
     /**
-   * Method to get the colour of the flower
-   * @return the colour of the flower
+   * Method to get the quantity of Food
+   * @return the quantity
    */
-  public String getColour()
+  public int getQuantity()
   {
-    return colour;
+    return quantity;
   }
   /**
-   * constructor to initialize the isEdible
-   * @param edible
+   * constructor to initialize nutrition
+   * @param nutrition
    */
-  public void setEdible (String edible)
+  public void setNutrition (int nutrition)
   {
-    isEdible = "Not edible";
+    nutrition = 1;
   }
   /**
-   * constructor to initialize the colour
-   * @param colour
+   * constructor to initialize the quantity
+   * @param quantity
    */
-  public void setColour (String colour)
+  public void setQuantity (int quantity)
   {
-    colour = "Purple";
+    if(quantity>=0)
+    {
+      this.quantity = 1;
+    }
+    else
+    {
+      this.quantity = +1;
+    }
   }
 }
