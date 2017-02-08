@@ -1,0 +1,39 @@
+public class Armor extends Item
+{  
+  //If armor
+  private String isArmor;
+  //Defense
+  private int defense;
+   /**
+   * Method to see if armor
+   * @return the status
+   */
+  public String getArmor()
+  {
+    return isArmor;
+  }
+    /**
+   * Method to get defense
+   * @return defense
+   */
+  public int getDefense()
+  {
+    return defense;
+  }
+  /**
+   * constructor to initialize isArmor
+   * @param armor
+   */
+  public void setArmor (String armor)
+  {
+    isArmor = "Armor up!";
+  }
+  /**
+   * constructor to initialize defense
+   * @param defense
+   */
+  public void setDefense (int defense)
+  {
+    defense = +1;
+  }
+}
