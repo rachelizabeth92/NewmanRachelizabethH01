@@ -1,0 +1,39 @@
+public class Weapon extends Item
+{  
+  //
+  private String isWeapon;
+  //
+  private int damage;
+   /**
+   * Method to see if it is a weapon
+   * @return the status of weapon
+   */
+  public String getWeapon()
+  {
+    return isWeapon;
+  }
+    /**
+   * Method to get the possible damage
+   * @return the damage
+   */
+  public int damage()
+  {
+    return damage;
+  }
+  /**
+   * constructor to initialize if weapon
+   * @param weapon
+   */
+  public void setWeapon (String weapon)
+  {
+    isWeapon = "This is a stabby object.";
+  }
+  /**
+   * constructor to initialize the damage
+   * @param damage
+   */
+  public void setDamage (int damage)
+  {
+    damage = 10;
+  }
+}
