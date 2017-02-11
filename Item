@@ -1,0 +1,68 @@
+public class Item
+{
+      //Name of item
+  private String itemName;
+      //type of item
+  private String itemType;
+     //Weight of item
+  private int itemWeight;
+  /**
+   * Method to get the name of the item
+   * @return the item name
+   */
+  public String getName()
+  {
+    return itemName;
+  }
+   /**
+   * constructor to initialize the itemName
+   * @param name
+   */
+  public void setName(String name)
+  {
+    itemName = name;
+  }
+   /**
+    * Method to get the type of item
+    * @return the type
+    */
+   public String getType()
+   {
+     return itemType;
+   }
+   /**
+    * constructor to initialize the itemType
+    * @param type
+    */
+   public void setType (String type)
+   {
+     itemType = type;
+   }
+   /**
+    * Method to get the weight of item
+    * @return the weight
+    */
+   public int getWeight()
+   {
+     return itemWeight;
+   }
+   /**
+    * constructor to initialize the itemWeight
+    * @param weight
+    */
+   public void setWeight (int weight)
+   {
+     itemWeight = weight;
+   }
+   
+   //EXAMINE, prints a description of the object
+   public void examine()
+   {
+     System.out.print(String.format("You are holding a %s %s of weight %d lbs.\n", itemName, itemType, itemWeight));
+   }
+   
+   //INITIALIZER 
+    public Item()
+       {
+       }
+}
