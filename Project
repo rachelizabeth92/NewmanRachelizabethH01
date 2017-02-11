@@ -1,0 +1,33 @@
+//test file
+public class project
+{
+
+public static void main(String[] args)
+{
+  int i = 3;
+  System.out.print(String.format("You are holding a %d\n", i));
+  
+  Weapon sword = new Weapon();
+  sword.setName("Singing");
+  sword.setWeight(100);
+  sword.setType("Sword");
+  sword.setDamage(30);
+  sword.examine();
+  
+  Armor shield = new Armor();
+  shield.setName("Asheilda");
+  shield.setWeight(25);
+  shield.setType("Shield");
+  shield.setDefense(5);
+  shield.examine();
+  
+  Food bread = new Food();
+  bread.setName ("Rye");
+  bread.setWeight(1);
+  bread.setType("Stale Bread");
+  bread.setQuantity(1);
+  bread.setNutrition(3);
+  bread.examine();
+}
+
+}
