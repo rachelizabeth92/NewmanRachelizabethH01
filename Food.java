@@ -2,7 +2,7 @@ public class Food extends Item
 {  
   //nutritional value
   private int nutrition;
-  //Color of Flower
+  //amount of food
   private int quantity;
    /**
    * Method to get the nutritional value
@@ -26,7 +26,7 @@ public class Food extends Item
    */
   public void setNutrition (int nutrition)
   {
-    nutrition = 1;
+    this.nutrition = nutrition;
   }
   /**
    * constructor to initialize the quantity
@@ -34,13 +34,6 @@ public class Food extends Item
    */
   public void setQuantity (int quantity)
   {
-    if(quantity>=0)
-    {
-      this.quantity = 1;
-    }
-    else
-    {
-      this.quantity = +1;
-    }
+    this.quantity = quantity;
   }
 }
